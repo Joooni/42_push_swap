@@ -6,11 +6,13 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:55:06 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/28 12:12:21 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/03/30 11:36:27 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+static int	ft_isnumeric(char *str);
 
 void	end_process(char *s)
 {
@@ -32,7 +34,7 @@ int	ft_is_sorted(t_list *stack)
 	return (1);
 }
 
-void	ft_checkdup(int argc, char **argv)
+void	ft_checkinput(int argc, char **argv)
 {
 	int	i;
 	int	j;
@@ -41,6 +43,8 @@ void	ft_checkdup(int argc, char **argv)
 	while (i < argc)
 	{
 		j = i + 1;
+		if (ft_isnumeric(argv[i]) == 0)
+			end_process("Error");
 		while (j < argc)
 		{
 			if (ft_atoi(argv[i]) == ft_atoi(argv[j]))
@@ -65,5 +69,23 @@ char	**ft_split_and_fill(int *argc, char **argv)
 		argv[i + 1] = lst[i];
 		i++;
 	}
+	if (argv[1] == NULL)
+		exit(1);
 	return (argv);
+}
+
+static int	ft_isnumeric(char *str)
+{
+	int	i;
+
+	i = 0;
+	if (str[i] == '-' && str[i + 1] != '\0')
+		i++;
+	while (str[i] != '\0')
+	{
+		if (ft_isdigit(str[i]) == 0)
+			return (0);
+		i++;
+	}
+	return (1);
 }
