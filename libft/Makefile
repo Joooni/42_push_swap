@@ -4,6 +4,7 @@ SRC = 	ft_abs.c \
 		ft_atoi.c \
 		ft_bzero.c \
 		ft_calloc.c \
+		ft_end_process.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \

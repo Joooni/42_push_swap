@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:57:28 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/30 11:14:46 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:41:49 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void	ft_rotate_up(t_list **list);
 void	ft_rotate_down(t_list **list);
 
 // utility functions
-void	end_process(char *s);
 void	ft_checkinput(int argc, char **argv);
 int		ft_is_sorted(t_list *stack);
 char	**ft_split_and_fill(int *argc, char **argv);

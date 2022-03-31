@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_end_process.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/11 11:05:38 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/31 13:31:39 by jsubel           ###   ########.fr       */
+/*   Created: 2022/03/31 13:40:35 by jsubel            #+#    #+#             */
+/*   Updated: 2022/03/31 13:46:15 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "libft.h"
 
-int	main(int argc, char **argv)
+void	ft_end_process(char *s)
 {
-	pushswap(argc, argv);
-	return (0);
+	ft_putendl_fd(s, 2);
+	exit(1);
 }

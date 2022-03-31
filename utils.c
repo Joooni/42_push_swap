@@ -6,19 +6,13 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:55:06 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/30 11:36:27 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:43:22 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 static int	ft_isnumeric(char *str);
-
-void	end_process(char *s)
-{
-	ft_putendl_fd(s, 2);
-	exit(1);
-}
 
 int	ft_is_sorted(t_list *stack)
 {
@@ -44,11 +38,11 @@ void	ft_checkinput(int argc, char **argv)
 	{
 		j = i + 1;
 		if (ft_isnumeric(argv[i]) == 0)
-			end_process("Error");
+			ft_end_process("Error");
 		while (j < argc)
 		{
 			if (ft_atoi(argv[i]) == ft_atoi(argv[j]))
-				end_process("Error");
+				ft_end_process("Error");
 			j++;
 		}
 		i++;

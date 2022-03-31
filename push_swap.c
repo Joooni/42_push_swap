@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:56:59 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/30 11:40:07 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:42:57 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	pushswap(int argc, char **argv)
 	int		*array;
 
 	if (argc < 2)
-		end_process("(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Wrong Input ✧ﾟ･: *ヽ(◕ヮ◕ヽ)");
+		ft_end_process("");
 	if (argc == 2)
 		argv = ft_split_and_fill(&argc, argv);
 	ft_checkinput(argc, argv);
@@ -88,6 +88,6 @@ static void	ft_create_stacks(t_list **stack_a, t_list **stack_b, char **argv)
 	{
 		free(stack_a);
 		free(stack_b);
-		end_process("Error");
+		ft_end_process("Error");
 	}
 }

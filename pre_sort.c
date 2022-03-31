@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 10:04:53 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/28 12:57:12 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:43:10 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	*presort(int argc, char **argv)
 	len = argc - 1;
 	array = ft_calloc(len, sizeof(int));
 	if (!array)
-		end_process("Error");
+		ft_end_process("Error");
 	i = 1;
 	while (i < argc)
 	{
