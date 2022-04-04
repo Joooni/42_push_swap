@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:55:06 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/31 13:43:22 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/04 08:28:32 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ char	**ft_split_and_fill(int *argc, char **argv)
 	}
 	if (argv[1] == NULL)
 		exit(1);
+	free(lst);
 	return (argv);
 }
 
