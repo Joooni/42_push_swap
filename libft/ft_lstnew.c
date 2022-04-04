@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 12:56:12 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/28 08:58:03 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/04 11:38:45 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(int content)
 {
 	t_list	*new_element;
 
-	new_element = (t_list *)ft_calloc(1, sizeof(t_list *));
+	new_element = ft_calloc(1, sizeof(t_list));
 	if (!new_element)
 	{
 		free(new_element);
