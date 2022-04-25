@@ -6,11 +6,11 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 12:30:53 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/15 10:40:07 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:17:12 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
