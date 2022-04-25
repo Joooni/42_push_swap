@@ -6,11 +6,11 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 14:06:38 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/28 09:32:22 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:05:43 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../incl/push_swap.h"
 
 void	ft_print_stacks(t_list *list_a, t_list *list_b)
 {

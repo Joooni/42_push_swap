@@ -6,11 +6,11 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 11:32:15 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/28 12:59:51 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:05:47 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../incl/push_swap.h"
 
 static int	ft_max_bits(int size);
 

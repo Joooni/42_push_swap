@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_rotate_down.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/22 14:55:36 by jsubel            #+#    #+#             */
-/*   Updated: 2022/04/04 11:29:43 by jsubel           ###   ########.fr       */
+/*   Created: 2022/03/21 13:29:41 by jsubel            #+#    #+#             */
+/*   Updated: 2022/04/25 17:05:20 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../incl/push_swap.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	ft_rra(t_list **list)
 {
-	void	*ptr;
+	ft_rotate_down(list);
+	ft_putendl_fd("rra", 1);
+}
 
-	ptr = malloc(size * count);
-	if (ptr == NULL)
-		return (ptr);
-	ft_bzero(ptr, size * count);
-	return (ptr);
+void	ft_rrb(t_list **list)
+{
+	ft_rotate_down(list);
+	ft_putendl_fd("rrb", 1);
+}
+
+void	ft_rrr(t_list **list_a, t_list **list_b)
+{
+	ft_rotate_down(list_a);
+	ft_rotate_down(list_b);
+	ft_putendl_fd("rrr", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:57:28 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/31 13:41:49 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:06:28 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdio.h>
 # include <stdint.h>
 # include <unistd.h>
-# include "libft/libft.h"
+# include "../42_libft/libft.h"
 
 // main functions
 int		pushswap(int argc, char **argv);

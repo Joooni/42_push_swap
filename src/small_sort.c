@@ -6,11 +6,11 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 09:17:50 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/28 09:21:38 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:05:50 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../incl/push_swap.h"
 
 void	small_sort(t_list **stack_a, t_list **stack_b)
 {

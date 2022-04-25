@@ -6,11 +6,11 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 13:23:35 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/31 11:47:53 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:05:32 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../incl/push_swap.h"
 
 void	ft_sa(t_list **list)
 {

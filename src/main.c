@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 14:40:45 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/15 10:49:12 by jsubel           ###   ########.fr       */
+/*   Created: 2022/03/11 11:05:38 by jsubel            #+#    #+#             */
+/*   Updated: 2022/04/25 17:05:38 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../incl/push_swap.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(int))
+int	main(int argc, char **argv)
 {
-	t_list	*current;
-
-	if (lst == NULL)
-		return ;
-	current = lst;
-	while (1)
-	{
-		(*f)(current->content);
-		current = current->next;
-		if (current == NULL)
-			return ;
-	}
-	return ;
+	pushswap(argc, argv);
+	return (0);
 }

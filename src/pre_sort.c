@@ -6,11 +6,11 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 10:04:53 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/31 13:43:10 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:05:40 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../incl/push_swap.h"
 
 static void	quicksort(int **array, int start, int end);
 static void	ft_quickswap(int *v1, int *v2);

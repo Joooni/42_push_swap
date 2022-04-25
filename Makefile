@@ -1,8 +1,9 @@
 # -*- MakeFile -*-
 
-NAME = push_swap
-LIB		= ./libft
-
+NAME 		= push_swap
+LIB			= ./42_libft
+OBJ_PATH	= obj
+SRC_PATH	= src
 # -*- Compiler -*-
 GCC = gcc
 FLAGS = -Wall -Wextra -Werror -O0
@@ -25,28 +26,32 @@ SRC =	main.c \
 		ft_rotate_down.c \
 
 # -*- Objects -*-
-OBJ=$(SRC:.c=.o)
+OBJS		= $(addprefix $(OBJ_PATH)/,$(SRC:.c=.o))
 
-.c.o: $(SRC) $(INCL)
+
+$(OBJ_PATH)/%.o: $(SRC_PATH)/%.c
 	$(GCC) $(FLAGS) -c -o $@ $<
 
-all: lib $(NAME)
+.PHONY:
+	all clean fclean re 
+
+all: lib tmp $(NAME)
 
 lib:
 	make bonus -C $(LIB)
 
-$(NAME): $(OBJ) $(LIB)/libft.a
+tmp:
+	@mkdir -p obj
+
+$(NAME): $(OBJS) $(LIB)/libft.a
 	$(GCC) $(FLAGS) $^ -o $(NAME)
 
 clean:
 	make clean -C $(LIB)
-	rm -rf $(OBJ)
+	rm -rf $(OBJ_PATH)
 
 fclean: clean
 	make fclean -C $(LIB)
 	rm -f $(NAME)
 
 re: clean fclean all
-
-.PHONY:
-	all clean fclean re 

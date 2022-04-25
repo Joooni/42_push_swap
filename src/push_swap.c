@@ -6,11 +6,11 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:56:59 by jsubel            #+#    #+#             */
-/*   Updated: 2022/04/04 11:55:22 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:05:45 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../incl/push_swap.h"
 
 static void	ft_initialize_stack(int argc, char **argv, t_list **stack);
 static void	ft_assign_index(int argc, t_list **stack, int **array);
