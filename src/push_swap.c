@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 11:56:59 by jsubel            #+#    #+#             */
-/*   Updated: 2022/04/25 17:05:45 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/27 13:59:34 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ int	pushswap(int argc, char **argv)
 		radix_sort(&stack_a, &stack_b);
 	ft_lstclear(&stack_a);
 	ft_lstclear(&stack_b);
+	free(array);
 	exit(0);
 }
 
